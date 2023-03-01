@@ -9,9 +9,9 @@ jobs: # gather all the jobs that run in the workflow
       - uses: actions/checkout@v2 # Step 1: Checks out a copy of your repository on the ubuntu-latest machine
 
       - name: Say Hello World # Step 2: Type the word 'Hello World'
-      run: echo 'Hello World'
+        run: echo 'Hello World'
 
       - name: View a file # Step 3: Two sub-steps involved
-      run: |
-        echo 'Viewing the file: '
-        cat requirements.txt
+        run: |
+          echo 'Viewing the file: '
+          cat requirements.txt
